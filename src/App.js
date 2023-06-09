@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ListContacts from './ListContacts';
 
-const contacts = [
-  {
+const App = () =>{
+const state = {
+  contacts: [
+    {
     "id": "karen",
     "name": "Karen Isgrigg",
     "handle": "@karen_isgrigg",
@@ -19,17 +21,17 @@ const contacts = [
     "name": "Tyler McGinnis",
     "handle": "@tylermcginnis",
     "avatarURL": "http://localhost:5001/tyler.jpg"
-  }
- ];
+  }]
+};
 
-class App extends Component {
-  render() {
+const removeContact = (contact) =>{
+
+}
     return (
       <div>
-        <ListContacts contacts={contacts}/>
+        <ListContacts contacts={state.contacts}/>
       </div>
     );
-  }
 }
 
 export default App;
